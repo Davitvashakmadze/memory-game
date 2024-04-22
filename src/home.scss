@@ -26,8 +26,18 @@
       gap: 0px;
       opacity: 0px;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: flex-end;
+      label {
+        width: 130px;
+        height: 25px;
+        gap: 0px;
+        color: rgba(113, 145, 165, 1);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24.8px;
+        text-align: left;
+      }
       button {
         background: rgba(188, 206, 217, 1);
         color: rgba(252, 252, 252, 1);
