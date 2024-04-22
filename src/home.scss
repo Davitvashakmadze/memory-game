@@ -1,0 +1,85 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(21, 41, 56, 1);
+  height: 100vh;
+
+  .main-app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 654px;
+    height: 559px;
+    top: 128px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(252, 252, 252, 1);
+    border-radius: 20px;
+
+    .Select-Theme {
+      width: 542px;
+      height: 93px;
+      top: 184px;
+      left: 56px;
+      gap: 0px;
+      opacity: 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      button {
+        background: rgba(188, 206, 217, 1);
+        color: rgba(252, 252, 252, 1);
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 32.24px;
+        text-align: center;
+
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 256px;
+        height: 52px;
+        top: 41px;
+        gap: 0px;
+        opacity: 0px;
+      }
+    }
+    .num-players {
+      background-color: gray;
+      width: 542px;
+      height: 93px;
+      top: 184px;
+      left: 56px;
+      gap: 0px;
+      opacity: 0px;
+    }
+    .grid-size {
+      background-color: gray;
+      width: 542px;
+      height: 93px;
+      top: 184px;
+      left: 56px;
+      gap: 0px;
+      opacity: 0px;
+    }
+    .start {
+      cursor: pointer;
+      background: rgba(253, 162, 20, 1);
+      color: rgba(252, 252, 252, 1);
+      border: none;
+      border-radius: 50px;
+      width: 542px;
+      height: 93px;
+      top: 184px;
+      left: 56px;
+      gap: 0px;
+      opacity: 0px;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39.68px;
+      text-align: center;
+    }
+  }
+}
