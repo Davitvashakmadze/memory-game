@@ -1,15 +1,19 @@
 body {
   background: rgba(21, 41, 56, 1);
   margin: 0;
-  font-family:  "Atkinson Hyperlegible", 'Segoe UI';
+  font-family: "Atkinson Hyperlegible", "Segoe UI";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  button{
-    font-family:  "Atkinson Hyperlegible", 'Segoe UI';
+  button {
+    font-family: "Atkinson Hyperlegible", "Segoe UI";
+  }
+  h1 {
+    text-align: center;
+    color: rgba(252, 252, 252, 1);
   }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
