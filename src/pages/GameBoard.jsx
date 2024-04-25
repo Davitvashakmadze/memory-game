@@ -1,6 +1,14 @@
 import React from "react";
+import Gaming from "./Gaming";
 
-function home() {
+
+
+function GameBoard() {
+
+  const handleClickStartGame = () => {
+    console.log("Start Game")
+  }
+  
   return (
     <div>
       <h1>Memory Game</h1>
@@ -8,14 +16,14 @@ function home() {
         <div className="Select-Theme">
           <label htmlFor="">Select Theme</label>
           <div className="btn-wrapper">
-            <button>Numbers</button>
+            <button className="active">Numbers</button>
             <button>Icons</button>
           </div>
         </div>
         <div className="num-players">
           <label htmlFor="">Numbers of Players</label>
           <div className="btn-wrapper">
-            <button>1</button>
+            <button className="active">1</button>
             <button>2</button>
             <button>2</button>
             <button>3</button>
@@ -24,14 +32,15 @@ function home() {
         <div className="grid-size">
           <label htmlFor="">Grid Size</label>
           <div className="btn-wrapper">
-            <button>4x4</button>
+            <button className="active">4x4</button>
             <button>6x6</button>
           </div>
         </div>
-        <button className="start">Start Game</button>
+        <button className="start" onClick={handleClickStartGame}>Start Game</button>
       </div>
+      <Gaming/>
     </div>
   );
 }
 
-export default home;
+export default GameBoard;

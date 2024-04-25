@@ -1,10 +1,10 @@
 import "./home.scss"
-import Home from "./home"
+import GameBoard from "./pages/GameBoard.jsx"
 
 function App() {
   return (
     <div className="App">
-     <Home/>
+     <GameBoard/>
     </div>
   );
 }

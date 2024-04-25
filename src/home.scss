@@ -53,6 +53,10 @@
       display: flex;
       justify-content: space-between;
     }
+    .active{
+      background: rgba(48, 72, 89, 1);
+
+    }
     label {
       color: rgba(113, 145, 165, 1);
       font-size: 20px;
