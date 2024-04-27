@@ -5,7 +5,7 @@ const Gaming = () => {
     <div>
       <div className="main-app-wrapper">
         <div className="app-header">
-          <h1>Memory</h1>
+          <h2>Memory</h2>
           <button>Restart</button>
           <button className="">New Game</button>
         </div>

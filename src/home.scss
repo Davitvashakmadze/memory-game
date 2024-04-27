@@ -109,5 +109,9 @@
     .start:hover {
       background: rgba(255, 184, 74, 1);
     }
+    .app.header{
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
