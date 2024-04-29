@@ -112,6 +112,9 @@
     .app.header{
       display: flex;
       justify-content: space-between;
+      .btn{
+        width: 40%;
+      }
     }
   }
 }
