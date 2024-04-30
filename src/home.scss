@@ -53,9 +53,8 @@
       display: flex;
       justify-content: space-between;
     }
-    .active{
+    .active {
       background: rgba(48, 72, 89, 1);
-
     }
     label {
       color: rgba(113, 145, 165, 1);
@@ -109,12 +108,41 @@
     .start:hover {
       background: rgba(255, 184, 74, 1);
     }
-    .app.header{
+  }
+}
+
+.gaming-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+  height: 100hv;
+  .app-header {
+    h2{
+      color: rgba(21, 41, 56, 1);
+
+    }
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .btn {
+      border-radius: 50px;
+      border: none;
+      width: 127px;
+      height: 52px;
+      gap: 0px;
+      opacity: 0px;
+    }
+    .restart {
+      background: rgba(253, 162, 20, 1);
+      color: rgba(252, 252, 252, 1);
+      font-weight: 700;
+    }
+    .btns {
       display: flex;
-      justify-content: space-between;
-      .btn{
-        width: 40%;
-      }
+      justify-content: space-evenly;
+      width: 25%;
     }
   }
 }
