@@ -148,11 +148,11 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 50px; /* Gap between grid items */
+    gap: 15px; /* Gap between grid items */
   }
   
   .grid-item {
-    width: 80px; /* Full width of grid cell */
+    width: 110px; /* Full width of grid cell */
     height: 0; /* Height based on aspect ratio */
     padding-top: 100%; /* Aspect ratio 1:1 (square) */
     background: rgba(48, 72, 89, 1);
