@@ -13,7 +13,6 @@ const Gaming = () => {
         </div>
         <div className="main-app-wrapper">
           <div className="grid-container">
-            {/* Create 4x4 grid */}
             {[...Array(16)].map((_, index) => (
               <div key={index} className="grid-item"></div>
             ))}
