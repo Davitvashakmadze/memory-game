@@ -49,6 +49,9 @@
     button:hover {
       background: rgba(99, 149, 184, 1);
     }
+    button:focus {
+      background: rgba(48, 72, 89, 1);
+    }
     .btn-wrapper {
       display: flex;
       justify-content: space-between;
