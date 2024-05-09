@@ -40,7 +40,9 @@ function GameBoard() {
                 <button>6x6</button>
               </div>
             </div>
-            <button className="start" onClick={handleClickStartGame}>Start Game</button>
+            <button className="start" onClick={handleClickStartGame}>
+              Start Game
+            </button>
           </div>
         </div>
       )}
