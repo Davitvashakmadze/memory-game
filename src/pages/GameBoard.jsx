@@ -5,7 +5,7 @@ function GameBoard() {
   const [gameStarted, setGameStarted] = useState(false);
 
   const handleClickStartGame = () => {
-    console.log("Start Game");
+    console.log("Start");
     setGameStarted(true);
   };
 
