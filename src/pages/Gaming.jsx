@@ -18,6 +18,13 @@ const Gaming = () => {
             ))}
           </div>
         </div>
+        <div className="players-wrapper">
+          <div className="player-wrapper">
+          {[...Array(4)].map((_, index) => (
+              <div key={index} className="player active-player"></div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -164,3 +164,20 @@ body {
     border-radius: 50%;
   }
 }
+
+.player-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  .player {
+    border-radius: 20px;
+    width: 255px;
+    height: 72px;
+    background: rgba(223, 231, 236, 1);
+  }
+  .active-player{
+    background: rgba(253, 162, 20, 1);
+    
+  }
+}
