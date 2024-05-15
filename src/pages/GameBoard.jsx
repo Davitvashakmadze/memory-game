@@ -7,6 +7,7 @@ function GameBoard() {
   const handleClickStartGame = () => {
     console.log("Start");
     setGameStarted(true);
+    document.body.style.backgroundColor = "#FFF";
   };
 
   return (

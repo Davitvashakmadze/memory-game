@@ -1,8 +1,11 @@
+body {
+  background: rgba(21, 41, 56, 1);
+}
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(21, 41, 56, 1);
   height: 100vh;
 
   .main-app-wrapper {
