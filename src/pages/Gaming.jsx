@@ -25,8 +25,14 @@ const Gaming = () => {
             ))}
           </div> */}
           <div className="player-wrapper single-wrapper">
-            <div className="player time-info"></div>
-            <div className="player move-info"></div>
+            <div className="player time-info">
+              <h3>Time</h3>
+              <h4>1:35</h4>
+            </div>
+            <div className="player move-info">
+              <h3>Moves</h3>
+              <h4>35</h4>
+            </div>
           </div>
         </div>
       </div>
