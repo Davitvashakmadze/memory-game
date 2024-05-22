@@ -147,12 +147,11 @@ body {
       font-weight: 700;
       font-size: 20px;
     }
-    .newGame{
+    .newGame {
       background: rgba(223, 231, 236, 1);
       color: rgba(48, 72, 89, 1);
       font-weight: 700;
       font-size: 20px;
-
     }
     .btns {
       display: flex;
@@ -194,7 +193,8 @@ body {
   .active-player {
     background: rgba(253, 162, 20, 1);
   }
-  .time-info , .move-info {
+  .time-info,
+  .move-info {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -203,10 +203,9 @@ body {
   h3 {
     color: rgba(113, 145, 165, 1);
   }
-  h4{
+  h4 {
     font-size: 150%;
     color: rgba(48, 72, 89, 1);
-
   }
 }
 .single-wrapper {
