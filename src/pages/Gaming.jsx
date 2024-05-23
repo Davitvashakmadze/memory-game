@@ -1,14 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import GameBoard from "./GameBoard";
 
-const Gaming = () => {
+const Gaming = ({ gridSize }) => {
   const [newGame, setNewGame] = useState(false);
+  const [gridItems, setGridItems] = useState([]);
 
   const handleNewGame = () => {
     console.log("new game started");
-    setNewGame(true)
-    document.body.style.backgroundColor = "rgba(21, 41, 56, 1)"
+    setNewGame(true);
+    document.body.style.backgroundColor = "rgba(21, 41, 56, 1)";
   };
+
+  useEffect(() => {
+    const size = gridSize === "6x6" ? 36 : 16;
+    setGridItems([...Array(size)].map((_, index) => <div key={index} className="grid-item"></div>));
+  }, [gridSize]);
 
   return (
     <div>
@@ -27,17 +33,10 @@ const Gaming = () => {
           </div>
           <div className="main-app-wrapper app-gaming">
             <div className="grid-container">
-              {[...Array(16)].map((_, index) => (
-                <div key={index} className="grid-item"></div>
-              ))}
+              {gridItems}
             </div>
           </div>
           <div className="players-wrapper">
-            {/* <div className="player-wrapper">
-          {[...Array(4)].map((_, index) => (
-              <div key={index} className="player active-player"></div>
-            ))}
-          </div> */}
             <div className="player-wrapper single-wrapper">
               <div className="player time-info">
                 <h3>Time</h3>

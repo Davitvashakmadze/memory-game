@@ -164,6 +164,9 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
   }
+  .grid-container[grid-size="6x6"] {
+  grid-template-columns: repeat(6, 1fr);
+}
 .app-gaming{
   width: 100%;
   height: 100%;
