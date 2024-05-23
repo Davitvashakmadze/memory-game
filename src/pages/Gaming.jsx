@@ -25,7 +25,7 @@ const Gaming = () => {
               </button>
             </div>
           </div>
-          <div className="main-app-wrapper">
+          <div className="main-app-wrapper app-gaming">
             <div className="grid-container">
               {[...Array(16)].map((_, index) => (
                 <div key={index} className="grid-item"></div>
