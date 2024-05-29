@@ -3,7 +3,7 @@ import Gaming from "./Gaming";
 
 function GameBoard() {
   const [gameStarted, setGameStarted] = useState(false);
-  const [gridSize, setGridSize] = useState("4x4"); // default grid size
+  const [gridSize, setGridSize] = useState("4x4"); 
 
   const handleClickStartGame = () => {
     console.log("Start");
