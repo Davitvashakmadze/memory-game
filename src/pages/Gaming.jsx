@@ -31,7 +31,7 @@ const Gaming = ({ gridSize }) => {
               </button>
             </div>
           </div>
-          <div className="main-app-wrapper app-gaming">
+          <div className={`main-app-wrapper app-gaming ${gridSize}`}>
             <div className="grid-container">
               {gridItems}
             </div>
