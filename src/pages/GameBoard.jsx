@@ -14,7 +14,7 @@ function GameBoard() {
   return (
     <div>
       {gameStarted ? (
-        <Gaming gridSize={gridSize} />
+        <Gaming gridSize={gridSize} />   
       ) : (
         <div>
           <h1>Memory Game</h1>
