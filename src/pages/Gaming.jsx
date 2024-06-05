@@ -44,7 +44,7 @@ const Gaming = ({ gridSize }) => {
               </div>
               <div className="player move-info">
                 <h3>Moves</h3>
-                <h4>35</h4>
+                <h4>22</h4>
               </div>
             </div>
           </div>
