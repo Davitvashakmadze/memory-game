@@ -42,9 +42,6 @@ body {
       cursor: pointer;
       width: 256px;
       height: 52px;
-      top: 41px;
-      gap: 0px;
-      opacity: 0px;
     }
     button:hover {
       background: rgba(99, 149, 184, 1);
@@ -69,9 +66,6 @@ body {
     .num-players {
       width: 542px;
       height: 93px;
-      top: 184px;
-      left: 56px;
-      gap: 0px;
       opacity: 0px;
       button {
         width: 22%;
@@ -86,10 +80,6 @@ body {
       justify-content: space-between;
       width: 542px;
       height: 93px;
-      top: 184px;
-      left: 56px;
-      gap: 0px;
-      opacity: 0px;
     }
     .start {
       cursor: pointer;
