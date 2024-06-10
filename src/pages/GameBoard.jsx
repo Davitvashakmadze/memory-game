@@ -3,7 +3,7 @@ import Gaming from "./Gaming";
 
 function GameBoard() {
   const [gameStarted, setGameStarted] = useState(false);
-  const [gridSize, setGridSize] = useState("4x4"); 
+  const [gridSize, setGridSize] = useState("4x4");
 
   const handleClickStartGame = () => {
     console.log("Start");
@@ -38,8 +38,18 @@ function GameBoard() {
             <div className="grid-size">
               <label>Grid Size</label>
               <div className="btn-wrapper">
-                <button className={gridSize === "4x4" ? "active" : ""} onClick={() => setGridSize("4x4")}>4x4</button>
-                <button className={gridSize === "6x6" ? "active" : ""} onClick={() => setGridSize("6x6")}>6x6</button>
+                <button
+                  className={gridSize === "4x4" ? "active" : ""}
+                  onClick={() => setGridSize("4x4")}
+                >
+                  4x4
+                </button>
+                <button
+                  className={gridSize === "6x6" ? "active" : ""}
+                  onClick={() => setGridSize("6x6")}
+                >
+                  6x6
+                </button>
               </div>
             </div>
             <button className="start" onClick={handleClickStartGame}>
