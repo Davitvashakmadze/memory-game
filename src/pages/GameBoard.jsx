@@ -4,6 +4,7 @@ import Gaming from "./Gaming";
 function GameBoard() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gridSize, setGridSize] = useState("4x4");
+  const [numPlayers, setNumPlayers] = useState(1);
 
   const handleClickStartGame = () => {
     console.log("Start");
@@ -14,7 +15,7 @@ function GameBoard() {
   return (
     <div>
       {gameStarted ? (
-        <Gaming gridSize={gridSize} />
+        <Gaming gridSize={gridSize} numPlayers={numPlayers} />
       ) : (
         <div>
           <h1>Memory Game</h1>
@@ -27,12 +28,32 @@ function GameBoard() {
               </div>
             </div>
             <div className="num-players">
-              <label>Numbers of Players</label>
+              <label>Number of Players</label>
               <div className="btn-wrapper">
-                <button className="active">1</button>
-                <button>2</button>
-                <button>2</button>
-                <button>3</button>
+                <button
+                  className={numPlayers === 1 ? "active" : ""}
+                  onClick={() => setNumPlayers(1)}
+                >
+                  1
+                </button>
+                <button
+                  className={numPlayers === 2 ? "active" : ""}
+                  onClick={() => setNumPlayers(2)}
+                >
+                  2
+                </button>
+                <button
+                  className={numPlayers === 3 ? "active" : ""}
+                  onClick={() => setNumPlayers(3)}
+                >
+                  3
+                </button>
+                <button
+                  className={numPlayers === 4 ? "active" : ""}
+                  onClick={() => setNumPlayers(4)}
+                >
+                  4
+                </button>
               </div>
             </div>
             <div className="grid-size">
