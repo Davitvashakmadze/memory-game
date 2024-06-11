@@ -5,6 +5,7 @@ function GameBoard() {
   const [gameStarted, setGameStarted] = useState(false);
   const [gridSize, setGridSize] = useState("4x4");
   const [numPlayers, setNumPlayers] = useState(1);
+  const [theme, setTheme] = useState("Numbers");
 
   const handleClickStartGame = () => {
     console.log("Start");
@@ -15,7 +16,7 @@ function GameBoard() {
   return (
     <div>
       {gameStarted ? (
-        <Gaming gridSize={gridSize} numPlayers={numPlayers} />
+        <Gaming gridSize={gridSize} numPlayers={numPlayers} theme={theme} />
       ) : (
         <div>
           <h1>Memory Game</h1>
@@ -23,8 +24,18 @@ function GameBoard() {
             <div className="Select-Theme">
               <label>Select Theme</label>
               <div className="btn-wrapper">
-                <button className="active">Numbers</button>
-                <button>Icons</button>
+                <button
+                  className={theme === "Numbers" ? "active" : ""}
+                  onClick={() => setTheme("Numbers")}
+                >
+                  Numbers
+                </button>
+                <button
+                  className={theme === "Icons" ? "active" : ""}
+                  onClick={() => setTheme("Icons")}
+                >
+                  Icons
+                </button>
               </div>
             </div>
             <div className="num-players">
