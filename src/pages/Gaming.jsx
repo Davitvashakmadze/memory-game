@@ -20,6 +20,7 @@ const Gaming = ({ gridSize, numPlayers, theme }) => {
   const [newGame, setNewGame] = useState(false);
   const [gridItems, setGridItems] = useState([]);
   const [revealedItems, setRevealedItems] = useState([]);
+  const [time, setTime] = useState(0);
   const [matchedItems, setMatchedItems] = useState([]);
   const [moves, setMoves] = useState(0);
 
@@ -37,8 +38,22 @@ const Gaming = ({ gridSize, numPlayers, theme }) => {
     setMoves(0);
   }, [gridSize, theme]);
 
+  useEffect(() => {
+    let timer;
+    if (!newGame) {
+      timer = setInterval(() => setTime((prevTime) => prevTime + 1), 1000);
+    } else {
+      clearInterval(timer);
+    }
+    return () => clearInterval(timer);
+  }, [newGame]);
+
   const handleItemClick = (index) => {
-    if (revealedItems.length < 2 && !revealedItems.includes(index) && !matchedItems.includes(index)) {
+    if (
+      revealedItems.length < 2 &&
+      !revealedItems.includes(index) &&
+      !matchedItems.includes(index)
+    ) {
       const newRevealedItems = [...revealedItems, index];
       setRevealedItems(newRevealedItems);
 
@@ -62,7 +77,9 @@ const Gaming = ({ gridSize, numPlayers, theme }) => {
           <div className="app-header">
             <h2>Memory</h2>
             <div className="btns">
-              <button className="btn restart" onClick={() => setNewGame(false)}>Restart</button>
+              <button className="btn restart" onClick={() => setNewGame(false)}>
+                Restart
+              </button>
               <button className="btn newGame" onClick={handleNewGame}>
                 New Game
               </button>
@@ -73,20 +90,26 @@ const Gaming = ({ gridSize, numPlayers, theme }) => {
               {gridItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`grid-item ${revealedItems.includes(index) ? "revealed" : ""} ${matchedItems.includes(index) ? "matched" : ""}`}
+                  className={`grid-item ${
+                    revealedItems.includes(index) ? "revealed" : ""
+                  } ${matchedItems.includes(index) ? "matched" : ""}`}
                   onClick={() => handleItemClick(index)}
                 >
-                  {revealedItems.includes(index) || matchedItems.includes(index) ? item : ""}
+                  {revealedItems.includes(index) || matchedItems.includes(index)
+                    ? item
+                    : ""}
                 </div>
               ))}
             </div>
           </div>
-          <div className="players-wrapper">
-            <div className="player-wrapper single-wrapper">
-              <div className="player time-info">
-                <h3>Moves</h3>
-                <h4>{moves}</h4>
-              </div>
+          <div className="player-wrapper single-wrapper">
+            <div className="player time-info">
+              <h3>Time</h3>
+              <h4>{time}s</h4>
+            </div>
+            <div className="player move-info">
+              <h3>Moves</h3>
+              <h4>{moves}</h4>
             </div>
           </div>
         </div>

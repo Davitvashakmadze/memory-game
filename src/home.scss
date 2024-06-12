@@ -19,7 +19,7 @@ body {
     padding: 15px 0;
     background: rgba(252, 252, 252, 1);
     border-radius: 20px;
- 
+
     .Select-Theme {
       width: 542px;
       height: 93px;
@@ -221,10 +221,9 @@ body {
   gap: 10px;
 }
 
-
-
 .grid-item {
   background-color: #ccc;
+  border: 1px solid #000;
   display: flex;
   text-align: center;
   align-items: center;
@@ -235,12 +234,11 @@ body {
   font-weight: bold;
 }
 
+
 .grid-item.revealed {
   background: rgba(253, 162, 20, 1);
-
 }
 
 .grid-item.matched {
   background: rgba(188, 206, 217, 1);
 }
-
