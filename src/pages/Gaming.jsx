@@ -73,7 +73,7 @@ const Gaming = ({ gridSize, numPlayers, theme }) => {
               {gridItems.map((item, index) => (
                 <div
                   key={index}
-                  className={`grid-item ${revealedItems.includes(index) || matchedItems.includes(index) ? "revealed" : ""}`}
+                  className={`grid-item ${revealedItems.includes(index) ? "revealed" : ""} ${matchedItems.includes(index) ? "matched" : ""}`}
                   onClick={() => handleItemClick(index)}
                 >
                   {revealedItems.includes(index) || matchedItems.includes(index) ? item : ""}
