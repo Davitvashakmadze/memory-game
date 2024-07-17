@@ -64,7 +64,7 @@ const Gaming = ({ gridSize, numPlayers, theme }) => {
           setMatchedItems([...matchedItems, firstIndex, secondIndex]);
         }
         setTimeout(() => setRevealedItems([]), 1000);
-      } 
+      }  
     }
   };
 
