@@ -184,9 +184,8 @@ body {
 }
 .player-wrapper {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
+  display: flex;
+  justify-content: space-between;
   .player {
     border-radius: 20px;
     width: 255px;
@@ -230,16 +229,15 @@ body {
   justify-content: center;
   height: 80px;
   cursor: pointer;
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: bold;
 }
 
 .grid-item.revealed {
   background: rgba(253, 162, 20, 1);
-  p{
+  p {
     padding-bottom: 90%;
   }
-
 }
 
 .grid-item.matched {
