@@ -236,6 +236,10 @@ body {
 
 .grid-item.revealed {
   background: rgba(253, 162, 20, 1);
+  p{
+    padding-bottom: 90%;
+  }
+
 }
 
 .grid-item.matched {

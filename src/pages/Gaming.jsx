@@ -95,9 +95,9 @@ const Gaming = ({ gridSize, numPlayers, theme }) => {
                   } ${matchedItems.includes(index) ? "matched" : ""}`}
                   onClick={() => handleItemClick(index)}
                 >
-                  {revealedItems.includes(index) || matchedItems.includes(index)
+                  <p>{revealedItems.includes(index) || matchedItems.includes(index)
                     ? item
-                    : ""}
+                    : ""}</p>
                 </div>
               ))}
             </div>
