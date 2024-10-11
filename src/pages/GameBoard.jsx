@@ -24,7 +24,7 @@ function GameBoard() {
             <div className="Select-Theme">
               <label>Select Theme</label>
               <div className="btn-wrapper">
-                <button
+                <button 
                   className={theme === "Numbers" ? "active" : ""}
                   onClick={() => setTheme("Numbers")}
                 >
