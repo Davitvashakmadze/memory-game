@@ -80,7 +80,7 @@ function GameBoard() {
                   className={gridSize === "6x6" ? "active" : ""}
                   onClick={() => setGridSize("6x6")}
                 >
-                  6x6
+                  6x6 
                 </button>
               </div>
             </div>
