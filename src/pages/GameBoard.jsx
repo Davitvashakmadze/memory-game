@@ -22,16 +22,16 @@ function GameBoard() {
           <h1>Memory Game</h1>
           <div className="main-app-wrapper">
             <div className="Select-Theme">
-              <label>Select Theme</label>
+              <label>Select Theme</label> 
               <div className="btn-wrapper">
-                <button 
+                <button
                   className={theme === "Numbers" ? "active" : ""}
                   onClick={() => setTheme("Numbers")}
                 >
                   Numbers
                 </button>
                 <button
-                  className={theme === "Icons" ? "active" : ""} 
+                  className={theme === "Icons" ? "active" : ""}
                   onClick={() => setTheme("Icons")}
                 >
                   Icons
@@ -80,7 +80,7 @@ function GameBoard() {
                   className={gridSize === "6x6" ? "active" : ""}
                   onClick={() => setGridSize("6x6")}
                 >
-                  6x6 
+                  6x6
                 </button>
               </div>
             </div>
