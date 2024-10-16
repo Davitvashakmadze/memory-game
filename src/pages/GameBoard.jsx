@@ -31,7 +31,7 @@ function GameBoard() {
                   Numbers
                 </button>
                 <button
-                  className={theme === "Icons" ? "active" : ""}
+                  className={theme === "Icons" ? "active" : ""} 
                   onClick={() => setTheme("Icons")}
                 >
                   Icons
